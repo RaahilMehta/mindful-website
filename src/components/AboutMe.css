@@ -1,0 +1,55 @@
+/* About Me section */
+.about-me {
+  /* background-color: #000;  */
+  color: #fff; /* Set text color to white */
+  padding: 20px;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+/* Card styling */
+.about-me .card {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  padding: 180px;
+  /* margin-top: 150px; */
+  text-align: center;
+  background: palevioletred; /* Linear gradient background */
+  color: #000; /* Set text color inside the card */
+}
+
+/* Social icons styling */
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  margin: 10px;
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+  padding: 10px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #000; /* Default icon color */
+}
+
+.social-icons a i {
+  color: #000; /* Default color for the icon */
+  transition: all 0.3s ease-in-out; /* Transition effect */
+  background: none; /* Ensure no background on the icon initially */
+}
+
+.social-icons a:hover i {
+  color: transparent; /* Make the icon text color transparent */
+  background: linear-gradient(135deg, #b4011f 20%, #403600 77%);
+  -webkit-background-clip: text; /* Clip the gradient to the icon */
+  -webkit-text-fill-color: transparent; /* Make the icon text transparent to show the gradient */
+}

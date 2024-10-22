@@ -1,0 +1,77 @@
+.reviews-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: #f7f7f7; /* Background color for the review section */
+}
+
+.reviews-container {
+  display: flex;
+  align-items: center;
+  gap: 50px; /* Space between the animation and the reviews */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.lottie-container {
+  width: 600px; /* Increased width */
+  height: 600px; /* Increased height */
+  padding-top: 20px; /* Padding for the animation */
+}
+
+.reviews-content {
+  flex: 1;
+}
+
+.reviews-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: left; /* Left align the section heading */
+}
+
+.reviews-list {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping of items */
+  justify-content: space-between; /* Distribute items across the row */
+  gap: 20px; /* Space between the cards */
+}
+
+.review-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Left align the entire card */
+  width: calc(60% - 10px); /* Set the card width to 60% */
+  flex-grow: 1; /* Allow the card to grow and fill the available space */
+  box-sizing: border-box; /* Ensure padding and width work together */
+  border: 2px solid yellow;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  text-align: left; /* Left align the review header */
+}
+
+.review-name {
+  margin-left: 0; /* Align the name to the left */
+  font-size: 1.2rem;
+  text-align: left; /* Ensure name is left aligned */
+}
+
+.review-date {
+  font-size: 0.9rem;
+  color: #999;
+  text-align: left; /* Ensure the date is aligned properly */
+}
+
+.review-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-left: 0; /* Align the review text with the name */
+  text-align: left; /* Left align the review text */
+}

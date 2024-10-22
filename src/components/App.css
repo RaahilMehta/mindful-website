@@ -1,0 +1,77 @@
+/* Body styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #FFC8DA; /* Background color for rest of the sections */
+  font-family: 'Poppins', sans-serif; /* Set Poppins font */
+}
+
+/* App container */
+.app {
+  text-align: center;
+  background-color: #FFC8DA; /* Apply background color globally */
+}
+
+/* Background for Blogs section */
+.blogs-background {
+  position: relative;
+  width: 100vw; /* Full width to ensure the background covers the whole section */
+  min-height: 100vh; /* Ensure the Blogs section covers the full viewport height */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /* Flexbox for centering the content */
+  display: flex;
+  justify-content: center; /* Horizontally center the blog content */
+  align-items: center; /* Vertically center the blog content */
+}
+
+/* Blog section content */
+.blogs-container {
+  max-width: 1200px; /* Adjust this to control the width of the blog cards themselves */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.blog-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Styling the image container with explicit overflow */
+.image-container {
+  display: flex;
+  width: 100vw;
+  height: 70vh;
+  overflow: hidden; /* Hide overflow for smooth transitions */
+}
+
+.images-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.image-slide {
+  min-width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+html {
+  scroll-behavior: smooth;
+}

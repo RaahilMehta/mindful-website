@@ -1,0 +1,67 @@
+/* Navbar styling */
+.navbar {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 15px 30px;
+  position: fixed; /* Make the navbar stick to the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Make the navbar span the full width */
+  z-index: 200; /* Ensure it stays on top of other elements */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for floating effect */
+  border-radius: 0; /* Remove rounded corners */
+  transition: all 0.3s ease; /* Smooth transition for sticky state */
+}
+
+/* Sticky navbar */
+.navbar.sticky {
+  background-color: #333;
+  transition: all 0.3s ease; /* Smooth transition for sticky state */
+  animation: slideDown 0.5s ease forwards; /* Slide-down animation for sticky state */
+}
+
+/* Navbar links */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Center the links */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 20px;
+}
+
+.navbar ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease; /* Add smooth hover animation */
+}
+
+.navbar ul li a:hover {
+  color: transparent; /* Set text color to transparent */
+  background: linear-gradient(135deg, #FF7088 20%, #FEE032 77%); /* Add gradient background */
+  -webkit-background-clip: text; /* Clip the gradient to the text */
+  -webkit-text-fill-color: transparent; /* Show the gradient inside the text */
+  transform: scale(1.1); /* Slight scaling on hover */
+  transition: all 0.3s ease; /* Ensure smooth transition for the hover effect */
+}
+
+/* Optional: Slide-down animation when navbar becomes sticky */
+@keyframes slideDown {
+  from {
+    top: -100px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling for the entire page */
+}
