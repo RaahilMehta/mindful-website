@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import './Navbar.css'; // Create this CSS for Navbar-specific styles
+import './Navbar.css';
 
 const Navbar = () => {
   const navbarRef = useRef(null);
@@ -19,12 +19,16 @@ const Navbar = () => {
 
   return (
     <div className={`navbar ${isSticky ? 'sticky' : ''}`} ref={navbarRef}>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#blogsss">Blogs</a></li>
-        <li><a href="#plans">Plans</a></li> {/* Link to Plans Section */}
-        <li><a href="#plans">  </a></li>
-      </ul>
+      <div className="navbar-content">
+        <ul className="navbar-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#blogs">Blogs</a></li>
+          <li><a href="#plans">Plans</a></li>
+        </ul>
+        <div className="ebook-button">
+          <button>Get free e-book!</button>
+        </div>
+      </div>
     </div>
   );
 };

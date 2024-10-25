@@ -1,67 +1,82 @@
-/* Navbar styling */
 .navbar {
-  background-color: #000000;
-  color: rgb(255, 255, 255);
-  padding: 15px 30px;
-  position: fixed; /* Make the navbar stick to the top */
+  background-color: #FBD963;
+  color: #000000;
+  padding: 5px 30px;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* Make the navbar span the full width */
-  z-index: 200; /* Ensure it stays on top of other elements */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for floating effect */
-  border-radius: 0; /* Remove rounded corners */
-  transition: all 0.3s ease; /* Smooth transition for sticky state */
+  width: 100%;
+  z-index: 200;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Sticky navbar */
-.navbar.sticky {
-  background-color: #333;
-  transition: all 0.3s ease; /* Smooth transition for sticky state */
-  animation: slideDown 0.5s ease forwards; /* Slide-down animation for sticky state */
-}
-
-/* Navbar links */
-.navbar ul {
-  list-style: none;
+.navbar-content {
   display: flex;
-  justify-content: center; /* Center the links */
-  margin: 0;
-  padding: 0;
+  justify-content: center;
+  align-items: center;
+  margin-left: 115px;
+  width: 100%;
+  padding-right: 20px; /* Added padding to keep the button within screen */
 }
 
-.navbar ul li {
-  margin: 0 20px;
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex: 1;
 }
 
-.navbar ul li a {
-  color: rgb(255, 255, 255);
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links a {
+  color: #000000;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease, transform 0.3s ease; /* Add smooth hover animation */
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.navbar ul li a:hover {
-  color: transparent; /* Set text color to transparent */
-  background: linear-gradient(135deg, #FF7088 20%, #FEE032 77%); /* Add gradient background */
-  -webkit-background-clip: text; /* Clip the gradient to the text */
-  -webkit-text-fill-color: transparent; /* Show the gradient inside the text */
-  transform: scale(1.1); /* Slight scaling on hover */
-  transition: all 0.3s ease; /* Ensure smooth transition for the hover effect */
+.navbar-links a:hover {
+  color: transparent;
+  /* background: linear-gradient(135deg, #ef0930 20%, #100d00 77%); */
+  background-color: palevioletred;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.1);
 }
 
-/* Optional: Slide-down animation when navbar becomes sticky */
-@keyframes slideDown {
-  from {
-    top: -100px;
-    opacity: 0;
+.ebook-button {
+  margin-left: auto;
+  margin-right: 200px; /* Additional right margin for button */
+}
+
+.ebook-button button {
+  background-color: #000000;
+  color: #f4f4f4;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-size: 200% 200%; /* Double the size for moving effect */
+}
+
+.ebook-button button:hover {
+  background: linear-gradient(135deg, #FF7088 20%, #FEE032 77%);
+  background-size: 200% 200%; /* Ensure gradient covers the button size */
+  background-position: 100% 0; /* Position for the initial gradient start */
+  color: #000;
+  animation: gradientMove 1s infinite alternate; /* Animation for moving effect */
+}
+
+/* Keyframes for moving gradient effect */
+@keyframes gradientMove {
+  0% {
+    background-position: 0 0; /* Start position */
   }
-  to {
-    top: 0;
-    opacity: 1;
+  100% {
+    background-position: 100% 100%; /* End position */
   }
-}
-
-/* Smooth scrolling for the entire page */
-html {
-  scroll-behavior: smooth; /* Enable smooth scrolling for the entire page */
 }
