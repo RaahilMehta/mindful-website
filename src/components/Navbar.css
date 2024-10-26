@@ -64,7 +64,7 @@
 }
 
 .ebook-button button:hover {
-  background: linear-gradient(135deg, #FF7088 20%, #FEE032 77%);
+  background: linear-gradient(135deg, #FF7088 20%, #fff3b2 77%);
   background-size: 200% 200%; /* Ensure gradient covers the button size */
   background-position: 100% 0; /* Position for the initial gradient start */
   color: #000;

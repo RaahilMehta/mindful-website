@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="footer-links">
           <a href="https://www.instagram.com/workk_in.progress/profilecard/?igsh=MW5lNHdyZTlmdDc2MQ%3D%3D" target="_blank" rel="noopener noreferrer">Instagram</a>
           <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">Contact</a>
-          <a href="mailto:your-email@example.com">Mail</a>
+          <a href="mailto:workkinprogress2@gmail.com">Mail</a>
         </div>
       </div>
     </footer>

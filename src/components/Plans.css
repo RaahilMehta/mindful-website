@@ -1,82 +1,91 @@
 .plans-section {
-    background-color: palevioletred; /* Light background for the plans section */
-    padding: 40px 20px; /* Padding for the section */
-    text-align: center; /* Center text */
+  background-color: palevioletred; /* Light background for the plans section */
+  padding: 40px 20px; /* Padding for the section */
+  text-align: center; /* Center text */
+}
+
+.plans-container {
+  display: flex; /* Flexbox layout for cards */
+  justify-content: center; /* Center the cards */
+  gap: 40px; /* Space between cards */
+  flex-wrap: wrap; /* Wrap cards to new line if needed */
+}
+
+.plan-card {
+  background-color: #fff; /* White background for cards */
+  border-radius: 35px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  padding: 20px; /* Padding inside cards */
+  width: 450px; /* Increased width for wider cards */
+  height: 400px; /* Increased height for the card */
+  position: relative; /* Position for the price */
+  text-align: left; /* Align text to the left */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure the price is at the bottom */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition for hover */
+  overflow: hidden; /* Hide overflow to avoid cutting off the gradient */
+}
+
+/* Price Section Gradient */
+.plan-card .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between calendar and price */
+  background-color: #e0e0e0; /* Light grey for price rectangle */
+  padding: 20px; /* Padding inside price rectangle */
+  border-radius: 30px; /* Rounded corners for price rectangle */
+  margin-top: auto; /* Push the price rectangle to the bottom */
+  font-size: 18px; /* Size for the price text */
+  position: relative; /* Position for the gradient effect */
+  overflow: hidden; /* Hide overflow to ensure smooth animation */
+}
+
+/* Keyframes for continuous moving gradient animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%; /* Start position */
   }
-  
-  .plans-container {
-    display: flex; /* Flexbox layout for cards */
-    justify-content: center; /* Center the cards */
-    gap: 40px; /* Space between cards */
-    flex-wrap: wrap; /* Wrap cards to new line if needed */
+  100% {
+    background-position: 200% 50%; /* End position */
   }
-  
-  .plan-card {
-    background-color: #fff; /* White background for cards */
-    border-radius: 35px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    padding: 20px; /* Padding inside cards */
-    width: 450px; /* Increased width for wider cards */
-    height: 400px; /* Increased height for the card */
-    position: relative; /* Position for the tag */
-    text-align: left; /* Align text to the left */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Ensure the price is at the bottom */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition for hover */
-  }
-  
-  .plan-card:hover {
-    transform: scale(1.05); /* Slightly increase the size on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add deeper shadow on hover */
-  }
-  
-  .plan-card h3 {
-    margin: 10px 0; /* Margin for heading */
-  }
-  
-  .plan-card .price {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Space between calendar and price */
-    background-color: #e0e0e0; /* Light grey for price rectangle */
-    padding: 20px; /* Padding inside price rectangle */
-    border-radius: 30px; /* Rounded corners for price rectangle */
-    margin-top: auto; /* Push the price rectangle to the bottom */
-    font-size: 18px; /* Size for the price text */
-  }
-  
-  .plan-card .price span {
-    margin-left: 10px; /* Add space between calendar and text */
-  }
-  
-  .plan-card .price .old-price {
-    text-decoration: line-through; /* Strikethrough for the old price */
-    color: #888; /* Grey color for the old price */
-    margin-right: 10px;
-  }
-  
-  .plan-card .price .new-price {
-    background-color: black; /* Black capsule for new price */
-    color: white; /* White text for new price */
-    font-weight: bold; /* Bold for new price */
-    padding: 10px 20px; /* Padding inside the capsule */
-    border-radius: 20px; /* Rounded capsule shape */
-  }
-  
-  .plan-card .calendar-icon {
-    font-size: 50px; /* Increase size of the calendar emoji */
-  }
-  
-  .popular .tag {
-    position: absolute; /* Position the tag */
-    top: -10px; /* Position above the card */
-    left: 50%; /* Center it horizontally */
-    transform: translateX(-50%); /* Center using transform */
-    background-color: #CDF2FF; /* Background color for the tag */
-    color: #008AB8; /* Text color for the tag */
-    padding: 5px 10px; /* Padding inside tag */
-    border-radius: 15px; /* Rounded corners for tag */
-    font-weight: bold; /* Bold text */
-  }
-  
+}
+
+/* Gradient Background for Price on Hover */
+.plan-card:hover .price {
+  background: linear-gradient(135deg, #FF7088 20%, #FEE032 77%); /* Initial gradient background */
+  background-size: 200% 200%; /* Double size for smooth movement */
+  animation: gradientAnimation 5s linear infinite; /* Apply animation with linear timing */
+  transition: background 0.3s ease; /* Smooth transition for gradient */
+}
+
+.plan-card:hover {
+  transform: scale(1.05); /* Slightly increase the size on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add deeper shadow on hover */
+}
+
+.plan-card h3 {
+  margin: 10px 0; /* Margin for heading */
+}
+
+.plan-card .price span {
+  margin-left: 10px; /* Add space between calendar and text */
+}
+
+.plan-card .price .old-price {
+  text-decoration: line-through; /* Strikethrough for the old price */
+  color: #000000; /* Grey color for the old price */
+  margin-right: 10px;
+}
+
+.plan-card .price .new-price {
+  background-color: black; /* Black capsule for new price */
+  color: white; /* White text for new price */
+  font-weight: bold; /* Bold for new price */
+  padding: 10px 20px; /* Padding inside the capsule */
+  border-radius: 20px; /* Rounded capsule shape */
+}
+
+.plan-card .calendar-icon {
+  font-size: 50px; /* Increase size of the calendar emoji */
+}
