@@ -8,8 +8,9 @@ const Footer = () => {
       <div className="footer-content">
         <p>&copy; {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
         <div className="footer-links">
+            {/* <p> Contace me:</p> */}
           <a href="https://www.instagram.com/workk_in.progress/profilecard/?igsh=MW5lNHdyZTlmdDc2MQ%3D%3D" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">Contact</a>
+          {/* <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">Contact</a> */}
           <a href="mailto:workkinprogress2@gmail.com">Mail</a>
         </div>
       </div>

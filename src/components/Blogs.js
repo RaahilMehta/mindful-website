@@ -5,22 +5,22 @@ import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const blogs = [
   {
-    image: '/assets/blog1.png',
-    title: 'Blog Post 1',
-    description: 'This is a short description of the first blog post.',
-    link: 'https://example.com/blog1',
+    image: '/assets/blog1.webp',
+    title: 'THE THEORY OF +, – and 0.',
+    // description: 'THE THEORY OF +, – and 0.',
+    link: 'https://littlemaytheuniverse.wordpress.com/2021/01/04/the-theory-of-and-0/',
   },
   {
-    image: '/assets/blog2.png',
-    title: 'Blog Post 2',
-    description: 'This is a short description of the second blog post.',
-    link: 'https://example.com/blog2',
+    image: '/assets/blog2.webp',
+    title: 'BLAME GAME – WORST ENEMY!!',
+    // description: 'BLAME GAME – WORST ENEMY!!',
+    link: 'https://littlemaytheuniverse.wordpress.com/2021/07/09/blame-game-worst-enemy/',
   },
   {
     image: '/assets/blog3.png',
-    title: 'Blog Post 3',
-    description: 'This is a short description of the third blog post.',
-    link: 'https://example.com/blog3',
+    title: 'THE UNATTENDED LOVE!!',
+    // description: 'THE UNATTENDED LOVE!!',
+    link: 'https://littlemaytheuniverse.wordpress.com/2021/05/20/the-unattended-love/',
   },
 ];
 

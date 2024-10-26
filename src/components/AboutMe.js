@@ -18,6 +18,12 @@ const AboutMe = () => {
           <a href="https://www.instagram.com/workk_in.progress/profilecard/?igsh=MW5lNHdyZTlmdDc2MQ==" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-instagram"></i>
           </a>
+          <a href="https://youtube.com/@workk_in.progress?si=GoTXS10RihL64fs2" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-youtube"></i>
+          </a>
+          <a href="https://littlemaytheuniverse.wordpress.com/" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-wordpress"></i>
+          </a>
         </div>
       </div>
     </div>

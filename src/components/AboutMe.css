@@ -49,7 +49,7 @@
   text-decoration: none;
   display: inline-block;
   transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
-  padding: 10px;
+  padding: 0px;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
@@ -65,7 +65,7 @@
 
 .social-icons a:hover i {
   color: transparent; /* Make the icon text color transparent */
-  background: linear-gradient(135deg, #b4011f 20%, #403600 77%);
+  background: linear-gradient(135deg,   #FBD963 20%, #FBD963 77%);
   -webkit-background-clip: text; /* Clip the gradient to the icon */
   -webkit-text-fill-color: transparent; /* Make the icon text transparent to show the gradient */
 }

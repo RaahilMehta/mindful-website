@@ -55,7 +55,7 @@
 .plan-card:hover .price {
   background: linear-gradient(135deg, #FF7088 20%, #FEE032 77%); /* Initial gradient background */
   background-size: 200% 200%; /* Double size for smooth movement */
-  animation: gradientAnimation 5s linear infinite; /* Apply animation with linear timing */
+  animation: gradientAnimation 3s linear infinite; /* Apply animation with linear timing */
   transition: background 0.3s ease; /* Smooth transition for gradient */
 }
 

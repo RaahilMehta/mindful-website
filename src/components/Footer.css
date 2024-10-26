@@ -18,7 +18,10 @@
   .footer-links {
     margin-top: 10px;
   }
-  
+  .footer-links p{
+    font-weight: bold;
+    color: #FBD963;
+  }
   .footer-links a {
     color: #FBD963;
     margin: 0 10px;
