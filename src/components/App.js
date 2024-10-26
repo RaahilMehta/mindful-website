@@ -3,9 +3,10 @@ import Navbar from './Navbar';
 import ImageSlider from './ImageSlider';
 import AboutMe from './AboutMe';
 import Blogs from './Blogs';
-import './App.css'; // Global styling
 import Plans from './Plans';
 import Reviews from './Reviews';
+import Footer from './Footer'; // Import Footer component
+import './App.css'; // Global styling
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <ImageSlider />
       <Navbar />
       <AboutMe />
-      
+
       {/* Apply background image only to the Blogs section */}
       <div 
         className="blogs-background" id="blogsss"
@@ -26,9 +27,10 @@ function App() {
       >
         <Blogs />
       </div>
-      
+
       <Plans />
       <Reviews />
+      <Footer /> {/* Add Footer at the end */}
     </div>
   );
 }
