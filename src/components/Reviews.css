@@ -75,3 +75,25 @@
   margin-left: 0; /* Align the review text with the name */
   text-align: left; /* Left align the review text */
 }
+
+@media (max-width: 768px) {
+  .reviews-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Reorder elements in mobile */
+  .lottie-container {
+    order: 2;
+    margin: 10px 0;
+  }
+
+  /* .reviews-content h2 {
+    order: 3;
+  } */
+
+  .reviews-list {
+    order: 1;
+  }
+}
+

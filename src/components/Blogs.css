@@ -83,3 +83,15 @@
 .scroll-button:hover {
   color: #555;
 }
+
+@media (max-width: 768px) {
+  .blogs-container {
+    display: block;
+    overflow-x: visible;
+  }
+  
+  .blog-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}

@@ -80,3 +80,69 @@
     background-position: 100% 100%; /* End position */
   }
 }
+/* Hide navbar links and show burger icon on mobile */
+.navbar-content {
+  display: flex;
+  justify-content: space-between; /* Align burger to the left, button to the right */
+  align-items: center;
+  width: 100%;
+  padding-right: 20px;
+}
+
+/* Style for burger menu icon */
+.burger-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 24px; /* Adjust size if needed */
+  padding: 10px;
+}
+
+/* Show burger menu on mobile screens and position it to the left */
+@media (max-width: 768px) {
+  .burger-menu {
+    display: block;
+    margin-left: 0; /* Align to left side */
+  }
+  
+  /* Hide desktop navbar links */
+  .navbar-links {
+    display: none;
+  }
+}
+/* Styles for the mobile menu */
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 46px; /* Adjust based on navbar height */
+  left: 0;
+  width: 30%;
+  background-color: #FBD963;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu.active {
+  display: block;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-menu a {
+  color: #000000;
+  text-decoration: none;
+  padding: 15px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.mobile-menu a:hover {
+  background-color: palevioletred;
+}
