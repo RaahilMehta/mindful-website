@@ -16,17 +16,17 @@ const Reviews = () => {
     {
       name: 'John Doe',
       date: 'October 1, 2023',
-      review: 'Great product! Really improved my workflow and made my day more productive!',
+      review: ' "Great product! Really improved my workflow and made my day more productive!"',
     },
     {
       name: 'Jane Smith',
       date: 'September 28, 2023',
-      review: 'Absolutely love this! Super easy to use and highly recommend it.',
+      review: '"Absolutely love this! Super easy to use and highly recommend it."',
     },
     {
       name: 'Samuel Green',
       date: 'September 25, 2023',
-      review: 'Fantastic experience! Customer support was very helpful and responsive.',
+      review: '"Fantastic experience! Customer support was very helpful and responsive."',
     },
     
   ];
