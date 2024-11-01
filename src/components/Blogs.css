@@ -88,10 +88,14 @@
   .blogs-container {
     display: block;
     overflow-x: visible;
-  }
-  
-  .blog-card {
     width: 80%;
-    margin-bottom: 20px;
+    padding: 0; /* Remove padding if there's any */
+    text-align: center;
+  }
+
+  .blog-card {
+    width: 90%; /* Adjust width to fit smaller screens */
+    max-width: 400px; /* Optional max width to keep it from stretching too wide */
+    margin: 0 auto 20px auto; /* Center the blog cards */
   }
 }
