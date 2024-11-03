@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Plans.css'; // Make sure to import the CSS file
+import './Plans.css'; // Ensure the CSS file is imported
 import Lottie from 'lottie-react'; // Import the Lottie component
 import { AiOutlineCalendar } from 'react-icons/ai'; // Import the calendar icon from React Icons
 
@@ -15,7 +15,7 @@ const Plans = () => {
   }, []);
 
   return (
-    <section className="plans-section" id="plans"> {/* Add id="plans" here */}
+    <section className="plans-section" id="plans">
       {/* Lottie Animation at the Top */}
       {animationData && (
         <div className="lottie-animation">
@@ -27,11 +27,14 @@ const Plans = () => {
         </div>
       )}
       
-      <h2></h2> {/* Add a heading for the section */}
-      <div className="plans-container" id="plansss">
+      <h2>Our Plans</h2> {/* Add a heading for the section */}
+      
+      <div className="plans-container">
         <div className="plan-card popular">
-          <span className="tag">Popular</span>
-          <h3>Basic Plan</h3>
+          <div className="header">
+            <h3>Basic Plan</h3>
+            <span className="tag">Popular</span>
+          </div>
           <div className="price">
             <AiOutlineCalendar className="calendar-icon" />
             <div>
@@ -40,6 +43,7 @@ const Plans = () => {
             </div>
           </div>
         </div>
+
         <div className="plan-card">
           <h3>Standard Plan</h3>
           <div className="price">
@@ -50,6 +54,7 @@ const Plans = () => {
             </div>
           </div>
         </div>
+
         <div className="plan-card">
           <h3>Premium Plan</h3>
           <div className="price">
@@ -60,6 +65,7 @@ const Plans = () => {
             </div>
           </div>
         </div>
+
         <div className="plan-card">
           <h3>Pro Plan</h3>
           <div className="price">

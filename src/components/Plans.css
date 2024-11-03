@@ -1,91 +1,112 @@
 .plans-section {
-  background-color: palevioletred; /* Light background for the plans section */
-  padding: 40px 20px; /* Padding for the section */
-  text-align: center; /* Center text */
+  background-color: palevioletred;
+  padding: 40px 20px;
+  text-align: center;
 }
 
 .plans-container {
-  display: flex; /* Flexbox layout for cards */
-  justify-content: center; /* Center the cards */
-  gap: 40px; /* Space between cards */
-  flex-wrap: wrap; /* Wrap cards to new line if needed */
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
+/* Plan Card Styles */
 .plan-card {
-  background-color: #fff; /* White background for cards */
-  border-radius: 35px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-  padding: 20px; /* Padding inside cards */
-  width: 450px; /* Increased width for wider cards */
-  height: 400px; /* Increased height for the card */
-  position: relative; /* Position for the price */
-  text-align: left; /* Align text to the left */
+  background-color: #fff;
+  border-radius: 35px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 450px;
+  height: 400px;
+  position: relative;
+  text-align: left;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Ensure the price is at the bottom */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition for hover */
-  overflow: hidden; /* Hide overflow to avoid cutting off the gradient */
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
 }
 
-/* Price Section Gradient */
+.plan-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Section for Plan Title and Tag */
+.plan-card .header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.plan-card h3 {
+  margin: 10px 0;
+}
+
+/* Tag Capsule Styles */
+.plan-card .tag {
+  background-color: #ff7088;
+  color: white;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Price Section */
 .plan-card .price {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Space between calendar and price */
-  background-color: #e0e0e0; /* Light grey for price rectangle */
-  padding: 20px; /* Padding inside price rectangle */
-  border-radius: 30px; /* Rounded corners for price rectangle */
-  margin-top: auto; /* Push the price rectangle to the bottom */
-  font-size: 18px; /* Size for the price text */
-  position: relative; /* Position for the gradient effect */
-  overflow: hidden; /* Hide overflow to ensure smooth animation */
-}
-
-/* Keyframes for continuous moving gradient animation */
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%; /* Start position */
-  }
-  100% {
-    background-position: 200% 50%; /* End position */
-  }
+  justify-content: space-between;
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 30px;
+  margin-top: auto;
+  font-size: 18px;
+  position: relative;
+  overflow: hidden;
 }
 
 /* Gradient Background for Price on Hover */
 .plan-card:hover .price {
-  background: linear-gradient(135deg, #FF7088 20%, #FEE032 77%); /* Initial gradient background */
-  background-size: 200% 200%; /* Double size for smooth movement */
-  animation: gradientAnimation 3s linear infinite; /* Apply animation with linear timing */
-  transition: background 0.3s ease; /* Smooth transition for gradient */
+  background: linear-gradient(135deg, #FF7088 20%, #FEE032 77%);
+  background-size: 200% 200%;
+  animation: gradientAnimation 3s linear infinite;
+  transition: background 0.3s ease;
 }
 
-.plan-card:hover {
-  transform: scale(1.05); /* Slightly increase the size on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add deeper shadow on hover */
+/* Keyframes for gradient animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
 }
 
-.plan-card h3 {
-  margin: 10px 0; /* Margin for heading */
-}
-
+/* Price Text Styling */
 .plan-card .price span {
-  margin-left: 10px; /* Add space between calendar and text */
+  margin-left: 10px;
 }
 
 .plan-card .price .old-price {
-  text-decoration: line-through; /* Strikethrough for the old price */
-  color: #000000; /* Grey color for the old price */
+  text-decoration: line-through;
+  color: #000000;
   margin-right: 10px;
 }
 
 .plan-card .price .new-price {
-  background-color: black; /* Black capsule for new price */
-  color: white; /* White text for new price */
-  font-weight: bold; /* Bold for new price */
-  padding: 10px 20px; /* Padding inside the capsule */
-  border-radius: 20px; /* Rounded capsule shape */
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 20px;
 }
 
+/* Calendar Icon Styling */
 .plan-card .calendar-icon {
-  font-size: 50px; /* Increase size of the calendar emoji */
+  font-size: 50px;
 }
