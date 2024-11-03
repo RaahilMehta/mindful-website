@@ -69,3 +69,23 @@
   -webkit-background-clip: text; /* Clip the gradient to the icon */
   -webkit-text-fill-color: transparent; /* Make the icon text transparent to show the gradient */
 }
+
+@media (max-width: 768px) {
+  .about-me {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .profile-pic {
+    width: 150px; /* Decrease profile image size */
+    height: 150px;
+  }
+
+  .about-me .card {
+    padding: 20px; /* Reduce padding inside the card */
+  }
+
+  .social-icons a {
+    font-size: 1.2rem; /* Slightly smaller icons on mobile */
+    margin: 5px;
+  }
+}

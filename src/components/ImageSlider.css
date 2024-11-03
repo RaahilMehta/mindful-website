@@ -20,3 +20,13 @@
     height: 300px; /* Maintain aspect ratio */
     object-fit: cover; /* Ensures the image covers the container */
 }
+@media (max-width: 768px) {
+    .image-container {
+        height: 200px; /* Reduce height on smaller screens */
+        margin-top: 10px; /* Further reduce margin-top */
+    }
+    
+    .banner-image {
+        height: 200px; /* Match the container height */
+    }
+}
