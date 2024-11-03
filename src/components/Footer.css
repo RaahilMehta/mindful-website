@@ -33,4 +33,34 @@
   .footer-links a:hover {
     color: #FF7088; /* Optional hover effect */
   }
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      padding: 10px; /* Reduced padding on smaller screens */
+    }
+    
+    .footer-links {
+      margin-top: 15px;
+      text-align: center;
+      width: 100%;
+    }
+  }
   
+  .footer-links p {
+    font-weight: bold;
+    color: #FBD963;
+    font-size: 16px; /* Adjust font size for mobile */
+  }
+  
+  .footer-links a {
+    color: #FBD963;
+    margin: 0 5px; /* Adjust spacing for mobile */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+  
+  .footer-links a:hover {
+    color: #FF7088; /* Optional hover effect */
+  }
