@@ -1,19 +1,45 @@
-/* About Me section */
 .about-me {
-  /* background-color: #000;  */
-  color: #fff; /* Set text color to white */
+  color: #fff;
   padding: 20px;
   border-radius: 15px;
   margin: 20px;
 }
-.profile-pic {
-  width: 240px; /* Adjust size as needed */
-  height: 240px;
-  border-radius: 50%; /* Makes the image circular */
-  margin-bottom: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow effect */
-  object-fit: cover; /* Ensures the image fits well */
+
+.card {
+  background-color: palevioletred;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  color: #000;
 }
+
+.about-me-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-pic {
+  width: 400px;
+  height: 550px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-me-content {
+  flex: 1;
+  text-align: left;
+}
+.about-me-content h2 {
+  margin-bottom: 70px; /* Adjusts space between h2 and p */
+  text-align: center;
+  font-size: 42px;
+}
+/* .about-me-content a{
+  text-align: center;
+} */
+
 .gradient-text {
   background: linear-gradient(135deg, #f3f365 20%, #FEE032 77%);
   -webkit-background-clip: text;
@@ -22,70 +48,39 @@
   text-fill-color: transparent;
 }
 
-
-/* Card styling */
-.about-me .card {
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  padding: 80px;
-  /* margin-top: 150px; */
+.social-icons {
+  margin-top: 70px;
   text-align: center;
-  background: palevioletred; /* Linear gradient background */
-  color: #000; /* Set text color inside the card */
-}
-
-/* Social icons styling */
-.social-icons {
-  margin-top: 10px;
-}
-
-.social-icons {
-  margin-top: 10px;
 }
 
 .social-icons a {
   font-size: 1.5rem;
-  margin: 10px;
-  text-decoration: none;
-  display: inline-block;
-  transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
-  padding: 0px;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: #000; /* Default icon color */
-}
-
-.social-icons a i {
-  color: #000; /* Default color for the icon */
-  transition: all 0.3s ease-in-out; /* Transition effect */
-  background: none; /* Ensure no background on the icon initially */
+  text-align: center;
+  margin: 0 10px;
+  color: #000;
+  transition: color 0.3s ease-in-out;
 }
 
 .social-icons a:hover i {
-  color: transparent; /* Make the icon text color transparent */
-  background: linear-gradient(135deg,   #FBD963 20%, #FBD963 77%);
-  -webkit-background-clip: text; /* Clip the gradient to the icon */
-  -webkit-text-fill-color: transparent; /* Make the icon text transparent to show the gradient */
+  color: transparent;
+  background: linear-gradient(135deg, #FBD963 20%, #FBD963 77%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (max-width: 768px) {
-  .about-me {
-    padding: 15px; /* Reduce padding for smaller screens */
+  .about-me-container {
+    flex-direction: column;
+    align-items: center;
   }
 
   .profile-pic {
-    width: 150px; /* Decrease profile image size */
-    height: 150px;
-  }
-
-  .about-me .card {
-    padding: 20px; /* Reduce padding inside the card */
+    width: 150px;
+    height: 180px;
   }
 
   .social-icons a {
-    font-size: 1.2rem; /* Slightly smaller icons on mobile */
+    font-size: 1.2rem;
     margin: 5px;
   }
 }

@@ -27,7 +27,7 @@ const Plans = () => {
         </div>
       )}
       
-      <h2>Our Plans</h2> {/* Add a heading for the section */}
+      <h2>Services</h2> {/* Add a heading for the section */}
       
       <div className="plans-container">
         <div className="plan-card popular">
